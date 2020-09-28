@@ -22,7 +22,7 @@
         <fastjson.version>1.2.71</fastjson.version>
         <netty.version>4.1.42.Final</netty.version>
         <okhttp3.version>4.7.2</okhttp3.version>
-        <jedis.version>2.9.0</jedis.version>
+        <jedis.version>3.3.0</jedis.version>
         <mysql.version>6.0.5</mysql.version>
         <hikarihcp.version>2.6.0</hikarihcp.version>
         <mongodb.version>3.11.0</mongodb.version>
@@ -60,6 +60,10 @@
         <nb.aliyun.version>1.0.1</nb.aliyun.version>
         <nb.mail.version>1.0.1</nb.mail.version>
         <nb.captcha.version>1.0.1</nb.captcha.version>
+        <nb.flink.version>1.0.1</nb.flink.version>
+        <nb.flink.server.version>1.0.1</nb.flink.server.version>
+        <nb.flink.kafka.version>1.0.1</nb.flink.kafka.version>
+        <nb.tomcat.version>1.0.1</nb.tomcat.version>
     </properties>
 
     <modules>
@@ -93,6 +97,10 @@
         <module>nettyboot-mail</module>
         <module>nettyboot-captcha</module>
         <module>nettyboot-test</module>
+        <module>nettyboot-flink</module>
+        <module>nettyboot-flink-server</module>
+        <module>nettyboot-flink-kafka</module>
+        <module>nettyboot-tomcat</module>
     </modules>
 
     <dependencies>
@@ -300,6 +308,26 @@
                 <groupId>com.nettyboot</groupId>
                 <artifactId>nettyboot-captcha</artifactId>
                 <version>${nb.captcha.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nettyboot</groupId>
+                <artifactId>nettyboot-flink</artifactId>
+                <version>${nb.flink.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nettyboot</groupId>
+                <artifactId>nettyboot-flink-server</artifactId>
+                <version>${nb.flink.server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nettyboot</groupId>
+                <artifactId>nettyboot-flink-kafka</artifactId>
+                <version>${nb.flink.kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nettyboot</groupId>
+                <artifactId>nettyboot-tomcat</artifactId>
+                <version>${nb.tomcat.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
