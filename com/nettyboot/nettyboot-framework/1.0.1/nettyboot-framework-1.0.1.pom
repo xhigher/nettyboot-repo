@@ -52,6 +52,7 @@
         <nb.gateway.version>1.0.1</nb.gateway.version>
         <nb.biznode.version>1.0.1</nb.biznode.version>
         <nb.mysql.version>1.0.1</nb.mysql.version>
+        <nb.mysql.mybatis.version>1.0.1</nb.mysql.mybatis.version>
         <nb.mongodb.version>1.0.1</nb.mongodb.version>
         <nb.redis.version>1.0.1</nb.redis.version>
         <nb.elasticsearch.version>1.0.1</nb.elasticsearch.version>
@@ -269,6 +270,11 @@
             </dependency>
             <dependency>
                 <groupId>com.nettyboot</groupId>
+                <artifactId>nettyboot-mysql-mybatis</artifactId>
+                <version>${nb.mysql.mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nettyboot</groupId>
                 <artifactId>nettyboot-redis</artifactId>
                 <version>${nb.redis.version}</version>
             </dependency>
@@ -383,16 +389,6 @@
             <id>nettyboot-repo</id>
             <url>file:D:/maven/nettyboot-repo</url>
         </repository>
-<!--        <repository>-->
-<!--            <id>releases</id>-->
-<!--            <name>gcip-releases</name>-->
-<!--            <url>http://124.71.110.22:8081/repository/maven-releases/</url>-->
-<!--        </repository>-->
-<!--        <snapshotRepository>-->
-<!--            <id>snapshots</id>-->
-<!--            <name>gcip-snapshots</name>-->
-<!--            <url>http://124.71.110.22:8081/repository/maven-snapshots/</url>-->
-<!--        </snapshotRepository>-->
     </distributionManagement>
 
 <!--    <profiles>-->
