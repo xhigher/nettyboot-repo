@@ -34,6 +34,8 @@
         <slf4j.varsion>1.7.21</slf4j.varsion>
         <logback.varsion>1.1.7</logback.varsion>
         <log4j.varsion>2.13.2</log4j.varsion>
+        <lombok.varsion>1.18.8</lombok.varsion>
+        <mybatis.varsion>3.5.5</mybatis.varsion>
 
         <nb.config.version>1.0.1</nb.config.version>
         <nb.util.version>1.0.1</nb.util.version>
@@ -105,6 +107,7 @@
         <module>nettyboot-flink-server</module>
         <module>nettyboot-flink-kafka</module>
         <module>nettyboot-tomcat</module>
+        <module>nettyboot-mysql-mybatis</module>
     </modules>
 
     <dependencies>
@@ -177,6 +180,16 @@
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
                 <version>${log4j.varsion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.varsion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.varsion}</version>
             </dependency>
 
             <dependency>
